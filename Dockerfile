@@ -71,9 +71,9 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 EXPOSE 8080
 EXPOSE 3000
 
-ADD scripts/sed.sh /etc/scripts/
-RUN chmod +x /etc/scripts/sed.sh
-ENTRYPOINT ["/etc/scripts/sed.sh"]
+#ADD scripts/sed.sh /etc/scripts/
+#RUN chmod +x /etc/scripts/sed.sh
+#ENTRYPOINT ["/etc/scripts/sed.sh"]
 # ------------------------------------------------------------------------------
 # Start supervisor, define default command.
 CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
