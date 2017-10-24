@@ -35,11 +35,14 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - \
 
 # ------------------------------------------------------------------------------
 # install meteor
-RUN curl https://install.meteor.com/ | sh
+#RUN curl https://install.meteor.com/ | sh
 
 # ------------------------------------------------------------------------------
 # add user
-RUN useradd -ms /bin/bash lbf && echo "lbf:lsdm38!" | chpasswd && adduser lbf sudo
+#RUN useradd -ms /bin/bash lbf && echo "lbf:lsdm38!" | chpasswd && adduser lbf sudo
+
+# ------------------------------------------------------------------------------
+# add graphcool
 
 # ------------------------------------------------------------------------------
 # Install Cloud9
