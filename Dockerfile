@@ -68,7 +68,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # ------------------------------------------------------------------------------
 # Expose ports.
-EXPOSE 8080
+EXPOSE 80
 EXPOSE 3000
 
 #ADD scripts/sed.sh /etc/scripts/
